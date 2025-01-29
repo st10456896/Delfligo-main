@@ -113,9 +113,45 @@
       .portfolio-grid {
         grid-template-columns: 1fr; /* One item per row */
       }
-    }
-    
+      .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
 
+        .image-scroller {
+            display: flex;
+            overflow-x: auto;
+            gap: 40px;
+            padding: 10px;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+        }
+
+        .image-scroller .image-box {
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .image-scroller img {
+            width: 80%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hide scrollbar for a cleaner look */
+        .image-scroller::-webkit-scrollbar {
+            display: none;
+        }
+
+        h3, span {
+            display: block;
+            margin: top 10px;
+      }
+    }
 </style>
 
 <!--[if lt IE 9]>
@@ -343,71 +379,62 @@
         </div>
       </div>
     </section>
-    
-<!--client_logos-->
-
-<section class="page_section team" id="Projects"><!--main-section team-start-->
-  <div class="container">
-    <h2>Projects</h2>
-    <h6>Commercial,Residential And Interior Designs.</h6>
-    <div class="team_section clearfix">
-      <div class="team_area">
-        <div class="team_box wow fadeInDown delay-03s">
-          <img src="img/assignmen1 irene.jpg" alt="">
-          <img src="img/asssignment 1 2 irene.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-          </ul>
-        </div>
+ 
+    <section class="page_section team" id="Portfolio">
         
-        <h3 class="wow fadeInDown delay-03s">Assignment 1</h3>
-        <span class="wow fadeInDown delay-03s">Residential Floor Plan</span>
-      </div>
-      <div class="team_area">
-        <div class="team_box  wow fadeInDown delay-06s">
-          <img src="img/asssignment 1 2 irene.jpg" alt="" >
-          <img src="img/assignmen1 irene.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-          </ul>
+          <div class="container">
+            <h2>Projects</h2>
+            <h6>Commercial, Residential, and Interior Designs.</h6>
+            <div class="image-scroller">
+                
+                <!-- Activities -->
+                <div class="image-box">
+                    <h3>Activities</h3>
+                    <span>Interior Design</span>
+                    <img src="img/activities 3.jpg" alt="Activity" width="450" height="450">
+                </div>
+                <div class="image-box">
+                    <img src="img/activity image .jpg" alt="Activity" width="400" height="400">
+                </div>
+                <div class="image-box">
+                    <img src="img/activity image 2.jpg" alt="Activity" width="400" height="400">
+                </div>
+    
+                <!-- Assignment 1 -->
+                <div class="image-box">
+                    <h3>Assignment 1</h3>
+                    <span>Residential Floor Plan</span>
+                    <img src="img/assignmen1 irene.jpg" alt="Assignment 1" width="400" height="400">
+                </div>
+                <div class="image-box">
+                    <img src="img/asssignment 1 2 irene.jpg" alt="Assignment 1" width="400" height="400">
+                </div>
+    
+                <!-- Assignment 2 -->
+                <div class="image-box">
+                    <h3>Assignment 2</h3>
+                    <span>Residential Floor Plan with Elevations and Section, Interior Design, and Kitchen Plan.</span>
+                    <img src="img/assignment 2 1 irene.jpg" alt="Assignment 2" width="400" height="400">
+                </div>
+                <div class="image-box">
+                    <img src="img/assignment 2 2 irene.jpg" alt="Assignment 2" width="400" height="400">
+                </div>
+                <div class="image-box">
+                    <img src="img/assignmet 2 3 irene.jpg" alt="Assignment 2"  width="400" height="400">
+                </div>
+    
+                <!-- Assignment 3 -->
+                <div class="image-box">
+                    <h3>Assignment 3</h3>
+                    <span>Kitchen Plan</span>
+                    <img src="img/kitchen.jpg" alt="Kitchen Plan" width="400" height="400">
+                </div>
+                <div class="image-box">
+                    <img src="img/kitchen 2.jpg" alt="Kitchen Plan"  width="400" height="400"   >
+                </div>
+            </div>
         </div>
-        <h3 class="wow fadeInDown delay-06s">Assignment 2</h3>
-        <span class="wow fadeInDown delay-06s">Residential Floor Plan With Elevations and Section.
-          Interior design and Kitchen plan.</span>
-      </div>
-      <div class="team_area">
-        <div class="team_box wow fadeInDown delay-09s">
-          <img src="img/assignment 2 1 irene.jpg" alt="">
-          <img src="img/assignment 2 2 irene.jpg" alt="">
-          <img src="img/assignmet 2 3 irene.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-          </ul>
-        </div>
-
-        <h3 class="wow fadeInDown delay-09s">Assignment 3</h3>
-        <span class="wow fadeInDown delay-09s">Kitchen Plan</span>
-          <img src="img/assignmet 3 1 irene.jpg" alt="">
-          <img src="img/assignmet 3 2 irene.jpg" alt="">
-          <img src="img/assignmet 3 3 irene.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-pinterest"></a></li>
-            <li><a href="javascript:void(0)" class="fa fa-google-plus"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+    
 
 </section>
 <!--/Team-->
@@ -444,7 +471,6 @@
                         </div>
        		  
 			  
-    
           <ul class="social_links">
             <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
             <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
